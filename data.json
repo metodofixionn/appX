@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "MétodoX",
+        "descripcion": "La metodologia se basa en 3 estadios, organizador diario para mayor produccion(SesionX), Organizador de tareas con determinacion de plazo (TareaX) y organizador de proyectos con determinación de responsables para su control (ProyectosX), por cualquier consulta contactarse vía mail a la siguiente direccíon: metodofixionn@gmail.com."
+    },
+    {
+        "id": 2,
+        "nombre": "SesiónX",
+        "descripcion": "Organizador diario, agregar sesiones segun lo que tenes que hacer en el día, pueden ser sesiones de trabajo, estudio, metas, actividad fisica o deporte y hogar, destinado para aprovechar el dia de la mejor manera. Es fundamental realizar la organización un dia antes."
+    },
+
+    {
+        "id": 3,
+        "nombre": "TareaX",
+        "descripcion": "Organizador de tareas de corto, mediano y largo plazo,puedes agregar tareas de todo tipo, al igual que en sesionX. Las tareas las vas a poder determinar segun su plazo de 7/15/30/60/90/120/180/360 días, y tambien segun el grado de importancia, va del 1 al 3, siendo 1 de grado de mayor importancia a 3 de menor importancia. "
+    },
+    {
+        "id": 3,
+        "nombre": "ProyectosX",
+        "descripcion": "Organizador de proyectos de trabajo conjunto, para poder determinar el area o persona responsable, el tiempo de ejecucion para poder pasar a las siguientes fases y la prioridad desde el 1 al 3. "
+    },
+
+    {
+        "id": 5,
+        "nombre": "FinanzasX",
+        "descripcion": "Organizador de finanzas personales, vas a poder organizar tus entradas y salida de dinero mediante la aplicacion, borrar aquellas que no estan de forma correcta. Utilizar este metodo sirve para poder ahorrar dinero, detectando los gastos hormigas."
+    }
+]    

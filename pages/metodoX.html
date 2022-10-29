@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MétodoX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-info justify-content-space-between p-3">
+        <img src="../assets/img/fixionn ok 2.png" class="col-3 col-md-1" alt=""> 
+        <div>
+            <a href="../index.html" style="color: white; font-family: monospace;" class="p-3">Inicio</a>
+            <a href="../pages/finanzasX.html" style="color: white; font-family: monospace;">FinanzasX</a>
+        </div>
+        
+    </nav>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+    </div>    
+    <main class="pb-2">
+        <div class="text-center">
+            <a href="#sesionX"><button class="rounded btn btn-info">SESIONX</button></a>
+            <a href="#tareaX"><button class="rounded btn btn-info">TAREAX</button></a>
+            <a href="#proyectoX"><button class="rounded btn btn-info">PROYECTOX</button></a>
+        </div>
+        <div class="container justify-content-center align-items-center text">
+            <div id="App" class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="sesionNueva">Nueva Sesion</h4>
+                        </div>
+                        <form id="sesion-form" class="card-body text-center justify-content-center">
+                            <div class="form-group">
+                                <strong><label for="">Tipo de sesión:</label></strong>
+                                <select type="text" id="sesionX" name="sesionX"  class="form-control" required>
+                                    <option value="Trabajo">Trabajo</option>
+                                    <option value="Estudio">Estudio</option>
+                                    <option value="Metas">Metas</option>
+                                    <option value="Hogar">Hogar</option>
+                                    <option value="Deporte">Deporte</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <strong><label for="">Horario:</label></strong>    
+                                <select type="text" id="horario" name="horario"  class="form-control" required>
+                                    <option>08:00</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                    <option>21:00</option>
+                                    <option>22:00</option>
+                                    <option>23:00</option>
+                                    <option>00:00</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="titulo" name="titulo" placeholder="Título" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" rows="5" cols="50" id="descripcion" name="descripcion" placeholder="Descripción" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" value="+" class="rounded-circle btn btn-info">
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+                <div id="listado-sesiones" class="col-md-8">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section style="background-color: rgb(0,53,122);" class="mt-5 pb-2">
+        <div class="container mb-2">
+            <div id="App2" class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="tareaNueva">Nueva tarea</h4>
+                        </div>
+                        <form id="tareaForm" class="card-body text-center justify-content-center">
+                            <div class="form-group">
+                                <strong><label for="">Tipo de tarea:</label></strong>
+                                <select type="text" id="tareaX" name="tareaX"  class="form-control" required>
+                                    <option value="Trabajo">Trabajo</option>
+                                    <option value="Estudio">Estudio</option>
+                                    <option value="Metas">Metas</option>
+                                    <option value="Hogar">Hogar</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">  
+                                <strong><label for="">Tiempo de ejecución:</label></strong>
+                                <select type="text" id="tiempo" name="tiempo"  class="form-control" required>
+                                    <option>7 dias</option>
+                                    <option>15 dias</option>
+                                    <option>30 dias</option>
+                                    <option>60 dias</option>
+                                    <option>90 dias</option>
+                                    <option>120 dias</option>
+                                    <option>180 dias</option>
+                                    <option>360 dias</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">  
+                                <strong><label for="">Prioridad:</label></strong>   
+                                <select type="text" id="PrioridadT" name="PrioridadT"  class="form-control" required>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>    
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="tituloTarea" name="tituloTarea" placeholder="Título" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" rows="5" cols="50" id="descripcionTarea" name="descripcionTarea" placeholder="Descripción" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" value="+" class="rounded-circle btn btn-info">
+                        </form>
+                    </div>
+                </div>
+                <div id="listaTareas" class="col-md-8">   
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container justify-content-center align-items-center text">
+        <div id="App" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4 class="proyectoNuevo">Nuevo Proyecto</h4>
+                    </div>
+                    <form id="proyectosForm" class="card-body text-center justify-content-center">
+                        <div class="form-group">
+                            <input type="text" id="proyectoX" name="proyectoX" placeholder="Nombre del proyecto" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="responsable" name="responsable" placeholder="Responsable del proyecto" class="form-control" required>
+                        </div>
+                        <div class="form-group">  
+                            <strong><label for="">Tiempo de ejecución:</label></strong>
+                            <select type="text" id="tiempoP" name="tiempoP"  class="form-control" required>
+                                <option>7 dias</option>
+                                <option>15 dias</option>
+                                <option>30 dias</option>
+                                <option>60 dias</option>
+                                <option>90 dias</option>
+                                <option>120 dias</option>
+                                <option>180 dias</option>
+                                <option>360 dias</option>
+                            </select>    
+                        </div>
+                        <div class="form-group">  
+                            <strong><label for="">Prioridad:</label></strong>   
+                            <select type="text" id="PrioridadP" name="PrioridadP"  class="form-control" required>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>    
+                        </div>
+                        <div class="form-group">
+                            <textarea type="text" rows="5" cols="50" id="descripcionP" name="descripcionP" placeholder="Descripción" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" value="+" class="rounded-circle btn btn-info">
+                    </form>
+                </div>
+            </div>
+            <div id="listaProyectos" class="col-md-8">
+            </div>
+        </div>
+    </div>
+    <footer class="mt-2 p-2 bg-info">
+        <div class="text-center">
+            <img src="../assets/img/fixionn ok 2.png" class="col-3 col-md-1" alt=""> 
+            <a href="../index.html" style="color: white; font-family: monospace;" class="p-3">Inicio</a>
+            <a href="../pages/finanzasX.html" style="color: white; font-family: monospace;">FinanzasX</a>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js" type="module"></script>
+    <script src="../assets/js/sesionX.js" type="module"></script>
+    <script src="../assets/js/tareaX.js"></script>
+    <script src="../assets/js/proyectoX.js"></script>
+</body>
+</html>

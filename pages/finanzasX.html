@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanzasX</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info justify-content-space-between">
+        <img src="../assets/img/fixionn ok 2.png" class="col-3 col-md-1" alt=""> 
+        <div>
+            <a href="../index.html" style="color: white; font-family: monospace;" class="p-3">Inicio</a>
+            <a href="../pages/metodoX.html" style="color: white; font-family: monospace;">MétodoX</a>
+        </div>
+        
+    </nav>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+    </div>   
+    <div class="text-center m-2">
+        <button class="openModal rounded-circle btn btn-info">+</button>
+    </div>
+    <main class="main display">
+        <div class="main-cont">
+            <button class="closeModal">x</button>
+            <form class="main__form">
+                <div class="main__form-inputCont main__form-cont">
+                    <label for="monto">Ingresa un detalle</label>
+                    <input type="text" placeholder="Detalle" class="inputDetalle input" maxlength="15">
+                </div>
+                <div class="main__form-inputCont main__form-cont">
+                    <label for="monto">Ingresa un monto</label>
+                    <input type="number" placeholder="Monto" class="inputMonto input">
+                </div>
+                <div class="main__form-selectCont main__form-cont">
+                    <select class="main__form-select">
+                        <option value="nada">Ingresa un tipo</option>
+                        <option value="Ingreso">Ingreso</option>
+                        <option value="Egreso">Egreso</option>
+                    </select>
+                </div>
+                <button class="main__form-button btn btn-info">Agregar</button>
+                <button class="main__form-buttonEdit btn btn-info">Editar</button>
+            </form>
+        </div>
+    </main>
+    <section class="main__historial">
+        <div class="historial-cont">
+            <h3 style="color: rgb(0,53,122); font-weight: 600;">Historial</h3>
+            <select class="main__historial-select">
+                <option value="nada">Ver todos</option>
+                <option value="ingresos">Ingresos</option>
+                <option value="egresos">Egresos</option>
+            </select>
+            <h4 class="montoTotal" style="color: rgb(0,53,122); font-weight: 600;">Monto final: $0.00</h4>
+            <div class="main__historial-cont"></div>
+        </div>
+    </section>
+    <footer class="mt-2 bg-info footerF">
+        <div class="justify-content-center row p-3">
+            <img src="../assets/img/fixionn ok 2.png" class="col-3 col-md-1" alt=""> 
+        </div>
+    </footer>
+    <script src="../assets/js/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+    <script src="../assets/js/finanzasX.js"></script>
+    <script src="https://kit.fontawesome.com/27d33191ba.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
